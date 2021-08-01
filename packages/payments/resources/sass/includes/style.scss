@@ -1,0 +1,33 @@
+.invalid-feedback {
+    display: block;
+}
+
+.method-description {
+    white-space: pre-line;
+}
+
+.qr-code {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-currency-dropdown {
+    max-width: 200px;
+}
+
+.StripeElement {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    border-radius: 0.25rem;
+    border: 1px solid $input-group-addon-border-color;
+
+    &.StripeElement--focus {
+        border-color: $input-focus-border-color;
+    }
+
+    &.StripeElement--invalid {
+        border-color: theme-color('danger');
+    }
+}

@@ -1,0 +1,43 @@
+Payments
+--------
+
+CHANGES HISTORY
+---------------
+v1.2.1 - 9 March 2021
+- Ability to deposit / withdraw BEP20 tokens (Binance Smart Chain) via Metamask.
+
+v1.2.0 - 4 March 2021
+- Ability to deposit / withdraw BNB (Binance Smart Chain) via Metamask.
+
+v1.1.1 - 14 December 2020
+- Bug fix: user notification email is not sent when manual deposit request is cancelled.
+
+v1.1.0 - 30 November 2020
+- Ability to enable admin email notifications when a user makes a deposit or withdrawal request.
+
+v1.0.8 - 1 September 2020
+- Ability to cancel / complete manual deposit requests.
+
+v1.0.7 - 27 July 2020
+- Bug fix: ERC20 token deposit / withdrawals via MetaMask.
+
+v1.0.6 - 1 July 2020
+- Bug fix: ERC20 token deposits are not automatically confirmed in some cases.
+
+v1.0.5 - 19 April 2020
+Bug fix: "Allow only profit withdrawals" setting does not work.
+
+v1.0.4 - 3 April 2020
+- Bug fix: 500 server error on the user deposits page when one of the deposits is pending.
+
+v1.0.3 - 30 March 2020
+- Security improvement.
+
+v1.0.2 - 24 March 2020
+- Metamask deposits / withdrawals: support ERC20 tokens with less than 18 decimals.
+
+v1.0.1 - 11 March 2020
+- Metamask withdrawal method configuration is missing.
+
+v1.0.0 - 05 March 2020
+- Initial release

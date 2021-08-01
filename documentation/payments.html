@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payments for Crypto Casino | Documentation</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col mt-3 mb-3">
+        <h1 class="border-bottom border-info text-info">Payments for Crypto Casino</h1>
+    </div>
+
+    <div class="col">
+        <h2>About</h2>
+        <p>
+            <b>Payments</b> is an add-on for the <a href="https://codecanyon.net/item/crypto-casino-slot-machine-online-gambling-platform-laravel-5-application/23088602" target="_blank">Crypto Casino</a> application,
+            which enables deposits and withdrawals.
+            This add-on can not be installed on its own without having <a href="https://codecanyon.net/item/crypto-casino-slot-machine-online-gambling-platform-laravel-5-application/23088602" target="_blank">Crypto Casino</a> installed first.
+        </p>
+    </div>
+
+    <div class="col">
+        <h2>System requirements</h2>
+        <ul>
+            <li>Crypto Casino <b>1.14.2</b> or higher.</li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h2>Installation</h2>
+
+        <h3 class="text-muted">Step 1</h3>
+        <p>
+            Log in to the Crypto Casino backend.
+        </p>
+
+        <h3 class="text-muted">Step 2</h3>
+        <p>
+            Open <b>Add-ons</b> page, find the purchased add-on in the list and click <b>Install</b> button.
+        </p>
+
+        <h3 class="text-muted">Step 3</h3>
+        <p>
+            Input the purchase code (it is sent by email from 2checkout.com) and click <b>Proceed</b> button.
+        </p>
+        <p>
+            The add-on should be automatically downloaded and installed.
+        </p>
+    </div>
+
+    <div class="col">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        What payment gateways are supported?
+                    </h4>
+                </div>
+                <p>
+                    At the moment the following payment gateways are supported:
+                </p>
+                <ul>
+                    <li>Paypal (only deposits)</li>
+                    <li>Stripe (only deposits)</li>
+                    <li>Coinpayments.net (deposits and withdrawals)</li>
+                    <li>Ethereum via Metamask (only deposits)</li>
+                </ul>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        How to start accepting deposits?
+                    </h4>
+                </div>
+                <p>
+                    To accept deposits you need to configure at least one Payment gateway. First, input necessary gateway account details
+                    (such as public key, private key etc) on the <b>Settings</b> page, <b>Add-on: Payments</b> tab.
+                    Then make sure this gateway is enabled on the <b>Payment gateways</b> page. You also need to specify the default currency
+                    you will accept deposits in and the reference rate, which is used to convert deposited money from real currency into credits.
+                </p>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        What are the extra steps required to enable coinpayments.net gateway?
+                    </h4>
+                </div>
+                <p>
+                    Please sign up at <a href="https://www.coinpayments.net/" target="_blank">coinpayments.net</a>, obtain merchant ID,
+                    public and private keys and input them in the app settings in the backend.
+                </p>
+                <p>
+                    After signing up with <a href="https://www.coinpayments.net/" target="_blank">coinpayments.net</a> you
+                    need to enable certain coins, which users are allowed to use for deposits and withdrawals.
+                    Apart from that you have to set the following permissions for the coinpayments.net API key (Account --> API keys --> Edit permissions):
+                </p>
+                <ul>
+                    <li>get_basic_info</li>
+                    <li>create_transaction</li>
+                    <li>get_tx_info</li>
+                    <li>balances</li>
+                    <li>create_withdrawal</li>
+                    <li>Allow auto_confirm = 1 in create_withdrawal (only in case you like to enable auto confirmation of withdrawals)</li>
+                    <li>get_withdrawal_info</li>
+                    <li>rates</li>
+                </ul>
+                <p>
+                    For security reasons it's recommended that email confirmation is <b>required</b> for any withdrawals from your account
+                    (Account Settings --> Login & Security).
+                </p>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        How to configure withdrawals?
+                    </h4>
+                </div>
+                <p>
+                    On the <b>Withdrawal methods</b> page you can choose which methods are available to users when creating a withdrawal request.
+                    There are couple of methods available by default, but you are free to create your own methods.
+                    Of course, custom withdrawal methods do not support automatic processing and you will need to take care
+                    of transferring funds manually.
+                </p>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        How are withdrawals processed?
+                    </h4>
+                </div>
+                <p>
+                    Withdrawals can be processed manually or automatically (coinpayments.net method only).
+                </p>
+                <p>
+                    If you want a want withdrawal request to be processed automatically you need to open the request page
+                    by clicking <b>View</b> button on the <b>Withdrawals</b> page in the backend and click <b>Approve & Send</b> button.
+                    An automatic transaction to transfer the requested amount of coins from your coinpayments.net account to the specified user address
+                    will be initiated (note that credits are automatically converted into coins using the reference rate and live market rates).
+                    When this transaction is completed (specific number of confirmations is received from the blockchain)
+                    coinpayments.net will send an instant payment notification (IPN) to your website and the request will be automatically marked as <b>Completed</b>.
+                    In order for this process to work you need to make sure that the <b>Secret key</b> provided in the settings is the same
+                    as in your coinpayments.net account and that external IPN requests are not blocked (e.g. by CloudFlare, proxy server or firewall).
+                </p>
+                <p>
+                    If you want to process a withdrawal request manually
+                    you can send the requested funds directly to the client and then click <b>Complete</b> button
+                    to finish the withdrawal request.
+                </p>
+                <p>
+                    To cancel a withdrawal request and return credits back to the user account click <b>Reject</b>.
+                </p>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-3">
+                        How to upgrade the add-on to a new version?
+                    </h4>
+                </div>
+                <p>
+                    The application automatically checks for updates on a daily basis.
+                    If a new version is available a notice will be displayed on the <b>Add-ons</b> page in the backend.
+                    Simply click <b>Update</b> button to install the new version.
+                </p>
+                <p>
+                    Please note that the game settings will be preserved, however any code changes will be overwritten.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mt-3">
+        <h2>Credits</h2>
+        <ul>
+            <li>PHP framework: <a href="https://laravel.com/docs/5.7" target="_blank">Laravel 5.7</a></li>
+            <li>Front-end framework: <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4.3</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="border-top mt-5">
+    <div class="container mt-3">
+        <div class="col">
+            <p>&copy; Built by <a href="https://financialplugins.com" target="_blank">FinancialPlugins.com</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Dice 3D
+-------
+
+CHANGES HISTORY
+---------------
+v1.0.1 - 14 May 2020
+- Ability to set banner image and categories for the front page in the app settings.
+
+v1.0.0 - 3 April 2020
+- Initial release.

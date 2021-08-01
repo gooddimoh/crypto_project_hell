@@ -1,0 +1,22 @@
+American Roulette
+-----------------
+
+CHANGES HISTORY
+---------------
+v1.1.4 - 14 May 2020
+- Ability to set banner image and categories for the front page in the app settings.
+
+v1.2.3 - 30 March 2020
+- Security improvement.
+
+v1.2.2 - 23 March 2020
+- Color last spun numbers red or black.
+
+v1.2.0 - 11 March 2020
+- Display last 10 spun numbers.
+
+v1.1.0 - 12 January 2020
+- Ability to manually input the bet amount.
+
+v1.0.0 - 24 October 2019
+- Initial release.
